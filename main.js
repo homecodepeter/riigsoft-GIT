@@ -6,3 +6,6 @@
     var age =  56;
     var second = "nasir";
     console.log('i am ' + name + second + 'and iam ' + age +'old');
+    console.log(mo);
+    console.log(year));
+    console.log(node);
