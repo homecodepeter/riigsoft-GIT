@@ -9,7 +9,9 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	background: #fff;
+	border-bottom: 1px solid #777;
 	position: fixed;
+	z-index: 30;
 }
 .loga{
 	display: flex;
@@ -118,7 +120,7 @@ nav ul li a:hover{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    background: linear-gradient(#e66465, #9198e5);;	
+    background: linear-gradient(to left,#e66465, #9198e5);;	
 }
 .now{
 	flex: 1;
@@ -149,7 +151,7 @@ nav ul li a:hover{
 	color: #fff;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.now .taa{
+.taa{
 	padding: 17px 4rem;
 	color: #fff;
 	outline:none;
@@ -158,12 +160,15 @@ nav ul li a:hover{
 	background-color: #091640;
 	font-size: 1.4rem;
 }
-.now .taa i:hover{
+.taa i:hover{
 	padding-left: 1.3rem;
 }
-.now .taa i{
+.taa i{
    padding-left: 1rem;
    transition: .5s;
+}
+.now .esi .tno{
+     color: aqua;
 }
 .know{
 	flex: 1;
@@ -183,7 +188,8 @@ nav ul li a:hover{
 .sec-tow{
 	display: flex;
 	justify-content: center;
-	width: 100%
+	width: 100%;
+	margin-top: 2rem;
 }
 .sote{
 	font-size: 2rem;
@@ -194,3 +200,210 @@ nav ul li a:hover{
 	color:#091640;
 	padding-right: 2rem;
 }
+/* section three style sheet */
+.sec-three{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.ol{
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 20px;
+
+}
+.ol .col{
+	width: 100%;
+}
+.ol .col h3{
+	width: 60px;
+	height: 50px;
+	border-radius: 10px;
+	background: green;
+	margin:auto;
+}
+.ol p{
+	text-align: center;
+}
+/* section four style sheet */
+.sec-four{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: RGB(247, 202, 201);
+	padding: 30px 0 30px 0;
+	z-index: -4;
+
+}
+.for{
+	flex: 1;
+	width: 100%;
+    margin:auto;
+	display: grid;
+	place-items: center;
+	position: relative;
+}
+.for h2{
+	text-align: center;
+	font-size: 2.3rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.for p{
+	text-align: center;
+	font-size: 1.3rem;
+}
+.fon{
+	flex: 1;
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+.bg{
+	width:300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: green;
+	z-index:1;
+	border: 30px solid #091640;
+	position: absolute;
+}
+.yt{
+	width: 50px;
+	height: 500px;
+	background: green;
+	transform: rotate(45deg);
+	position: absolute;
+}
+.yt::after{
+	content: "";
+	width: 50px;
+	height: 500px;
+	background: green;
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+ .fon img{
+   width: 300px;
+   height: 300px;
+   z-index: 5;
+   border-radius: 20px
+}
+/* section five style sheet */
+.sec-five{
+	width: 100%;
+	height: 60vh;
+	display: grid;
+	place-items: center;
+	position: relative;
+}
+.fiv{
+	display: grid;
+	place-items: center;
+}
+.fiv .ton{
+	outline:none;
+	padding: 20px;
+	border:none;
+	border-radius: 10px;
+	font-size: 1.4rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fiv p{
+	width: 60%;
+	text-align: center;
+	font-size: 1.4rem;
+}
+.h1{
+	position: absolute;
+	left: 0;
+	font-size: 12rem;
+	z-index: -1;
+	color: rgba(0,0,0,0.125)
+}
+.icon i{
+	padding-right: 20px;
+	font-size: 2rem;
+}
+/* section 6 style sheet */
+.sec-six{
+	width: 100%;
+	display: flex;
+	padding: 20px 0 60px 0;
+	justify-content: center;
+	background: RGB(223, 207, 190);
+	z-index: 3;
+}
+.si{
+	flex:1;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	position: relative;
+}
+.si .nt{
+	width: 250px;
+	height: 250px;
+	background: yellow;
+	border: 20px solid RGB(0, 155, 119);
+	position: absolute;
+	transform: rotate(-40deg);
+	z-index: 1;
+}
+.si img{
+	width: 300px;
+	height: 300px;
+}
+.si img{
+	background: transparent;
+	z-index: 2;
+}
+.xi{
+	flex: 1;
+	margin-top: 2rem;
+}
+.xi h1{
+	width: 90%;
+	font-size: 2rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.xi p{
+	width: 90%;
+}
+.xi button{
+	padding: 15px 38px;
+	font-size: 1.2rem;
+	outline:none;
+	border:none;
+	background: green;
+	color: #fff;
+	border-radius: 20px;
+}
+.inside{
+	width: 600px;
+	height: 180px;
+	background: #fff;
+	margin:auto;
+	display: flex;
+	align-items: center;
+	padding-left: 1rem;
+	border-radius: 20px;
+	position: relative;
+	top: -20px;
+	z-index: 6;
+	box-shadow: 0 0 4px 6px rgba(0,0,0,0.2);
+}
+.side img{
+	border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
